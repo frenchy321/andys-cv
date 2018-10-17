@@ -1,3 +1,29 @@
+body {
+  overflow-x: hidden;
+  /* WILL HIDE ANY SCROLL BARS ON THE X AXIS*/ }
 
+.nav-item {
+  text-decoration: underline; }
+
+#hero-section {
+  background-image: url("../img/me-with-kids.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: 250px; }
+
+#homesection-1 img {
+  height: 300px;
+  width: 300px; }
+
+#homesection-3 img {
+  min-height: 200px; }
+
+#homesection-4 i {
+  min-height: 300px; }
+
+#aboutsection-1 img {
+  height: 350px;
+  width: 350px; }
 
 /*# sourceMappingURL=style.css.map */
