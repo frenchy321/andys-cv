@@ -7,20 +7,26 @@ body {
 
 #hero-section {
   background-image: url("../img/me-with-kids.jpg");
-  min-height: 500px;
+  min-height: 100vh;
+  background-color: rgba(230, 126, 34, 0.8);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  margin-top: 250px; }
+  background-repeat: no-repeat; }
+  #hero-section .dark-overlay {
+    background-color: rgba(230, 126, 34, 0.8); }
 
 #homesection-1 img {
   height: 300px;
   width: 300px; }
 
+#homesection-2 img {
+  height: 325px;
+  width: 325px; }
+
 #homesection-3 img {
   min-height: 200px; }
 
 #homesection-4 i {
-  min-height: 300px; }
+  font-size: 200px; }
 
 #aboutsection-1 img {
   height: 350px;
