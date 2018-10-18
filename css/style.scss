@@ -9,16 +9,22 @@ body {
   text-decoration: underline;
 }
 
+// HOME SECTION
+
 #hero-section {
   background-image: url("../img/me-with-kids.jpg");
   min-height: 100vh;
-  background-color: $orange-overlay;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: 0 -560px;
+}
 
-  .dark-overlay {
-    background-color: $orange-overlay;
-  }
+.dark-overlay {
+  background-color: $orange-overlay;
+}
+
+#homesection-1 button {
+  background-color: $orange;
 }
 
 #homesection-1 img {
@@ -31,15 +37,33 @@ body {
   width: 325px;
 }
 
+#homesection-2 a {
+  color: $orange;
+}
+
+#homesection-3 button {
+  background-color: $orange;
+}
+
 #homesection-3 img {
   min-height: 200px;
+}
+
+#homesection-4 a {
+  color: $orange;
 }
 
 #homesection-4 i {
   font-size: 200px;
 }
 
+// ABOUT SECTION
+
 #aboutsection-1 img {
   height: 350px;
   width: 350px;
+}
+
+#contact-section-1 i {
+  font-size: 200px;
 }
