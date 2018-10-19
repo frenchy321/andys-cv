@@ -9,6 +9,8 @@ body {
   text-decoration: underline;
 }
 
+/* ----- HOME PAGE ----- */
+
 // HOME SECTION
 
 #hero-section {
@@ -19,12 +21,29 @@ body {
   background-position: 0 -560px;
 }
 
-.dark-overlay {
-  background-color: $orange-overlay;
+#hero-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-section h4 {
+    font-size: 5rem;
+  }
 }
 
 #homesection-1 button {
   background-color: $orange;
+}
+
+@media only screen and (max-width: 768px) {
+  #homesection-1 button {
+    margin-bottom: 25px;
+  }
 }
 
 #homesection-1 img {
@@ -41,6 +60,10 @@ body {
   color: $orange;
 }
 
+#homesection-2 button:hover {
+  background-color: #fff;
+}
+
 #homesection-3 button {
   background-color: $orange;
 }
@@ -51,6 +74,10 @@ body {
 
 #homesection-4 a {
   color: $orange;
+}
+
+#homesection-4 button:hover {
+  background-color: #fff;
 }
 
 #homesection-4 i {
@@ -66,4 +93,18 @@ body {
 
 #contact-section-1 i {
   font-size: 200px;
+}
+
+// SKILLS SECTION
+
+#skills-section-1 .paintbrush-img {
+  height: 300px;
+}
+
+/* ----- EXAMPLES PAGE ----- */
+
+@media only screen and (max-width: 768px) {
+  #examples-section-1 img {
+    height: 300px;
+  }
 }
