@@ -1,8 +1,8 @@
 $orange: #e67e22;
-$orange-overlay: rgba(230, 126, 34, 0.8);
+$dark-overlay: rgba(37, 34, 31, 0.8);
 
 body {
-  overflow-x: hidden; /* WILL HIDE ANY SCROLL BARS ON THE X AXIS*/
+  overflow-x: hidden;
 }
 
 .nav-item {
@@ -14,11 +14,17 @@ body {
 // HOME SECTION
 
 #hero-section {
-  background-image: url("../img/me-with-kids.jpg");
-  min-height: 100vh;
-  background-attachment: fixed;
+  background: url(../img/me-with-kids.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -560px;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-position: center -550px;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-section h4 {
+    font-size: 70px;
+  }
 }
 
 #hero-section .dark-overlay {
@@ -28,12 +34,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-}
-
-@media only screen and (max-width: 768px) {
-  #hero-section h4 {
-    font-size: 5rem;
-  }
+  cursor: pointer;
 }
 
 #homesection-1 button {
@@ -68,8 +69,21 @@ body {
   background-color: $orange;
 }
 
+@media only screen and (max-width: 768px) {
+  #homesection-3 button {
+    margin-bottom: 20px;
+  }
+}
+
 #homesection-3 img {
   min-height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  #homesection-3 img {
+    max-height: 300px;
+    margin: auto;
+  }
 }
 
 #homesection-4 a {
@@ -84,7 +98,7 @@ body {
   font-size: 200px;
 }
 
-// ABOUT SECTION
+// ABOUT PAGE
 
 #aboutsection-1 img {
   height: 350px;
@@ -95,13 +109,21 @@ body {
   font-size: 200px;
 }
 
-// SKILLS SECTION
+// SKILLS PAGE
 
 #skills-section-1 .paintbrush-img {
   height: 300px;
 }
 
 /* ----- EXAMPLES PAGE ----- */
+
+@media only screen and (max-width: 768px) {
+  #examples-section-1 img {
+    height: 300px;
+  }
+}
+
+/* ----- CONTACT PAGE ----- */
 
 @media only screen and (max-width: 768px) {
   #examples-section-1 img {
