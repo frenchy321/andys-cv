@@ -9,8 +9,12 @@ body {
   background: url(../img/me-with-kids.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   min-height: 500px;
-  background-position: center -550px; }
+  background-position: center 20%; }
+
+#hero-section {
+  text-shadow: 2px 2px 4px black; }
 
 @media only screen and (max-width: 768px) {
   #hero-section h4 {
@@ -24,11 +28,15 @@ body {
   background: rgba(0, 0, 0, 0.7);
   cursor: pointer; }
 
-#homesection-1 button {
+#homesection-1 a {
   background-color: #e67e22; }
 
+#homesection-1 a:hover {
+  color: #000 !important;
+  background-color: #fff; }
+
 @media only screen and (max-width: 768px) {
-  #homesection-1 button {
+  #homesection-1 a {
     margin-bottom: 25px; } }
 #homesection-1 img {
   height: 300px;
@@ -39,13 +47,20 @@ body {
   width: 325px; }
 
 #homesection-2 a {
-  color: #e67e22; }
+  color: #000;
+  background: white; }
 
-#homesection-2 button:hover {
-  background-color: #fff; }
+#homesection-2 a:hover {
+  color: #fff;
+  background: #e67e22;
+  border: 1px solid black; }
 
-#homesection-3 button {
+#homesection-3 a {
   background-color: #e67e22; }
+
+#homesection-3 a:hover {
+  color: #000 !important;
+  background-color: white; }
 
 @media only screen and (max-width: 768px) {
   #homesection-3 button {
@@ -58,10 +73,13 @@ body {
     max-height: 300px;
     margin: auto; } }
 #homesection-4 a {
-  color: #e67e22; }
+  color: #000;
+  background: white; }
 
-#homesection-4 button:hover {
-  background-color: #fff; }
+#homesection-4 a:hover {
+  color: #fff;
+  background: #e67e22;
+  border: 1px solid black; }
 
 #homesection-4 i {
   font-size: 200px; }
@@ -84,5 +102,7 @@ body {
 @media only screen and (max-width: 768px) {
   #examples-section-1 img {
     height: 300px; } }
+#contact-card {
+  background-color: #e67e22; }
 
 /*# sourceMappingURL=style.css.map */

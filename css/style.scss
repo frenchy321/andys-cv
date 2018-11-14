@@ -1,5 +1,4 @@
 $orange: #e67e22;
-$dark-overlay: rgba(37, 34, 31, 0.8);
 
 body {
   overflow-x: hidden;
@@ -17,8 +16,13 @@ body {
   background: url(../img/me-with-kids.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   min-height: 500px;
-  background-position: center -550px;
+  background-position: center 20%;
+}
+
+#hero-section {
+  text-shadow: 2px 2px 4px black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,12 +41,17 @@ body {
   cursor: pointer;
 }
 
-#homesection-1 button {
+#homesection-1 a {
   background-color: $orange;
 }
 
+#homesection-1 a:hover {
+  color: #000 !important;
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
-  #homesection-1 button {
+  #homesection-1 a {
     margin-bottom: 25px;
   }
 }
@@ -58,15 +67,23 @@ body {
 }
 
 #homesection-2 a {
-  color: $orange;
+  color: #000;
+  background: white;
 }
 
-#homesection-2 button:hover {
-  background-color: #fff;
+#homesection-2 a:hover {
+  color: #fff;
+  background: $orange;
+  border: 1px solid black;
 }
 
-#homesection-3 button {
+#homesection-3 a {
   background-color: $orange;
+}
+
+#homesection-3 a:hover {
+  color: #000 !important;
+  background-color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,11 +104,14 @@ body {
 }
 
 #homesection-4 a {
-  color: $orange;
+  color: #000;
+  background: white;
 }
 
-#homesection-4 button:hover {
-  background-color: #fff;
+#homesection-4 a:hover {
+  color: #fff;
+  background: $orange;
+  border: 1px solid black;
 }
 
 #homesection-4 i {
@@ -129,4 +149,10 @@ body {
   #examples-section-1 img {
     height: 300px;
   }
+}
+
+// CONTACT PAGE
+
+#contact-card {
+  background-color: $orange;
 }
